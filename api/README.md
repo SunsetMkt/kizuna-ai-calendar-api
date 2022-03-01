@@ -21,3 +21,12 @@ API返回值：用于直接获取OSS（对象存储服务，可以理解为网�
 ## kizunaai_demo.php
 
 测试环境，不要用
+
+## app.php
+
+灰暗江原的最初版本源码
+
+参数：id = 0630
+    date = MM-DD格式，**需要**与服务器时间相同 例如01-01 02-22 12-31
+
+会根据date读取`./videos/KizunaAI`下文件夹名符合MM-DD格式内的文件，随机返回文件夹内一文件路径，返回格式为`./videos/KizunaAI/MM-DD/*.mp4`

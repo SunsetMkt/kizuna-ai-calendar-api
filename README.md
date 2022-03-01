@@ -14,6 +14,8 @@ Vercel提供部署无服务器API的服务，使用项目[vercel-php](https://gi
 
 `/kizunaai.php?id=63045280&date=【两位数月】-【两位数日】`
 
+如果您可以在自己的服务器上直接使用php，请直接使用`kizunaai.php`，并修改去除OSS相关部分代码。
+
 ## OSS部署
 
 [onedrive-vercel-index](https://github.com/spencerwooo/onedrive-vercel-index)是可以部署在Vercel上的OneDrive/SharePoint文件索引和直链获取工具，通过在OneDrive上传相同文件结构视频资源的方法与API配合。
@@ -23,6 +25,8 @@ Vercel提供部署无服务器API的服务，使用项目[vercel-php](https://gi
 `/api?path=/KizunaAI/02-28/1.mp4&raw=true`
 
 `/api?path=【从根目录“/”开始的文件路径】&raw=true`
+
+如果您可以在自己的服务器上直接使用HTTP服务器，请直接提供整个`KizunaAI`文件夹。
 
 ## 视频资源结构
 
