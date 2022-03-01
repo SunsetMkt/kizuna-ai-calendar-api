@@ -56,6 +56,7 @@
             return response.text();
         }).then(function (data) {
             console.log(data);
+            // 这里调用video.js，也可以直接用video标签，但这样似乎更方便
             videojs('ai-player', {
                 autoplay: true,
                 controls: true,
