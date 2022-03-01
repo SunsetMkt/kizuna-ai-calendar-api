@@ -1,11 +1,13 @@
 <?php
-header("Access-Control-Allow-Origin: *");//cors，允许一切引用
-error_reporting(0);//禁止报错
+header("Access-Control-Allow-Origin: *"); // cors，允许一切引用
+error_reporting(0); // 禁止报错
 /*
-     * 绊爱日历项目云端API
+     * 绊爱日历项目服务器API
      * 参数：id = 63045280 Bilbili原作者ID
      *     date = MM-DD格式，不需要与服务器时间相同 例如01-01 02-22 12-31
      * API返回值：用于直接获取OSS（对象存储服务，可以理解为网盘）上文件的URL，纯文本
+     * 作者：灰暗江原 & lwd-temp
+     * 日期：2022-03-01
     */
 
 /*
@@ -28,7 +30,6 @@ $dir = '/KizunaAI';
 $date_regex = '/^(0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/';
 
 // json转数组（多维数组）
-// php真可恶 字典不好嘛？列表不好嘛？整个Array干嘛？
 $file_struct = json_decode($file_struct_str, true);
 
 date_default_timezone_set('Asia/Shanghai'); //设置默认时区
@@ -60,7 +61,6 @@ if (isset($_GET["id"])) {
             } catch (\Throwable $th) {
                 echo "error-03";
             }
-            
         } else {
             echo "error-02";
         }
