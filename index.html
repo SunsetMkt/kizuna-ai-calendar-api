@@ -60,6 +60,23 @@
             return response.text();
         }).then(function (data) {
             console.log(data);
+            // API异常处理
+            if (data == 'error-00') {
+                alert('error-00   没有请求id');
+                return false;
+            }
+            else if (data == 'error-01') {
+                alert('error-01   请求id不存在');
+                return false;
+            }
+            else if (data == 'error-02') {
+                alert('error-02   数据错误');
+                return false;
+            }
+            else if (data == 'error-03') {
+                alert('error-03   无数据')
+                return false;
+            }
             // 这里调用video.js，也可以直接用video标签，但这样似乎更方便
             videojs('ai-player', {
                 autoplay: true,
