@@ -1,4 +1,4 @@
-# kizuna_ai_calendar
+# kizuna-ai-calendar-api
 
 绊爱日历项目后端Serverless API+OSS部署方案
 
