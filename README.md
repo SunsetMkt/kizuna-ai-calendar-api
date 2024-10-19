@@ -1,7 +1,7 @@
 # 已弃用
 此项目已不再被认为是有作用的，并由以下项目代替。
 
-https://github.com/lwd-temp/KizunaAI-Web
+https://github.com/SunsetMkt/KizunaAI-Web
 
 # kizuna-ai-calendar-api
 
